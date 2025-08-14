@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Employee.css">
+    <title>Employee Deshboard</title>
+</head>
+
+<body>
+
+    <h1>Employee Deshboard</h1>
+    <div class="mainCard">
+
+        <% IdData.map((emp)=> { %>
+
+            <div class="profile-page">
+
+
+                <!-- Left section -->
+                <div class="profile-left">
+                    <div class="profile-img">
+                        <img src="<%= emp.img %>" alt="Employee Image">
+                    </div>
+                    <h2>
+                        <%= emp.name %>
+                    </h2>
+                    <p class="short-desc">
+                        <%= emp.department %> at <%= emp.company %>
+                    </p>
+                </div>
+
+                <div class="profile-right">
+                    <h3>About</h3>
+                    <p>
+                        <%= emp.description %>
+                    </p>
+
+
+
+                    <div class="details">
+                        <p><strong>Age:</strong>
+                            <%= emp.details.age %>
+                        </p>
+                        <p><strong>Email:</strong>
+                            <%= emp.details.email %>
+                        </p>
+                        <p><strong>Phone:</strong>
+                            <%= emp.details.phone %>
+                        </p>
+                        <p><strong>Joining Date:</strong>
+                            <%= emp.details.joining_date %>
+                        </p>
+                    </div>
+
+
+                    <div class="profile-actions">
+                        <a href="/update/<%=emp.id %>"><button>📝 Update</button></a>
+                        <a href=""><button>❌ Delete</button></a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <% }) %>
+
+
+    </div>
+
+
+</body>
+
+</html>

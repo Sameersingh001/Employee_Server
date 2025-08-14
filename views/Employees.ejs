@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Employees.css">
+    <title>Employees Panel</title>
+</head>
+
+<body>
+    <h1>Welcome to Employees Panel</h1>
+
+    <div class="main">
+
+        <% AllData.map((emp)=> { %>
+            
+            <div class="profile">
+              <div class="image">   
+                  <img src="<%= emp.img %>" alt="">
+              </div>
+              <div class="content">
+
+                ID : <%= emp.id %>
+                <h2><%= emp.name %></h2>
+                <%= emp.department %>
+
+                <a href="/emp/<%=emp.id %>" class="link"><button class="View">View Emp</button></a>
+              </div>
+
+              
+            </div>
+
+
+        <% }) %>
+
+
+    </div>
+
+</body>
+
+</html>

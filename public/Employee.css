@@ -1,0 +1,178 @@
+h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #6c63ff;
+  font-weight: 800;
+  border-bottom: 4px solid #6c63ff;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* Main Card */
+.profile-page {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f8faff, #ffffff);
+  padding: 40px;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.profile-page:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Left: Image Section */
+.profile-left {
+  flex: 0 0 250px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #6c63ff;
+  background: #fff;
+  margin: auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+.profile-img:hover {
+  border-color: #ff6584;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.profile-img img:hover {
+  transform: scale(1.08);
+}
+
+.profile-left h2 {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.short-desc {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Right: Info Section */
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-right h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+.profile-right p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 12px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #6c63ff, #7e7cff);
+  color: #fff;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ff6584, #ff85a1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-left {
+    flex: none;
+  }
+
+  .profile-right {
+    align-items: center;
+  }
+}
+
+/* Action buttons container */
+.profile-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Common button styles */
+.profile-actions a button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Update button */
+.profile-actions a:first-child button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+}
+
+.profile-actions a:first-child button:hover {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+}
+
+/* Delete button */
+.profile-actions a:last-child button {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.profile-actions a:last-child button:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: translateY(-2px);
+}
