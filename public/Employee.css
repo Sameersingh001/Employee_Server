@@ -154,6 +154,16 @@ h1 {
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+.profile-actions form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
 
 /* Update button */
 .profile-actions a:first-child button {
@@ -167,12 +177,12 @@ h1 {
 }
 
 /* Delete button */
-.profile-actions a:last-child button {
+.profile-actions form:last-child button {
   background: linear-gradient(135deg, #e74c3c, #c0392b);
   color: white;
 }
 
-.profile-actions a:last-child button:hover {
+.profile-actions form:last-child button:hover {
   background: linear-gradient(135deg, #c0392b, #a93226);
   transform: translateY(-2px);
 }

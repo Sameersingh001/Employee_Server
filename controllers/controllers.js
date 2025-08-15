@@ -24,11 +24,20 @@ function saveData(req, res){
     res.redirect(`/emp/${id}`)
 }   
 
+function deleteData(req, res){
+    const Id = parseInt(req.params.id)
+    model.getDeleteEmp(Id)
+    res.redirect('/')
+
+}
+
+
 
 export default {
     AllData,    
     IdData,
     UpdateEmpData,
-    saveData
+    saveData,
+    deleteData
 
 }

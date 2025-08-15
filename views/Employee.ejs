@@ -57,7 +57,10 @@
 
                     <div class="profile-actions">
                         <a href="/update/<%=emp.id %>"><button>📝 Update</button></a>
-                        <a href=""><button>❌ Delete</button></a>
+
+                        <form action="/delete/<%=emp.id %>?_method=DELETE" method="POST">
+                            <button type="submit">❌ Delete</button>
+                        </form>
                     </div>
 
 

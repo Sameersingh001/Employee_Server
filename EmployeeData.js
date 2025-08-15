@@ -11,7 +11,7 @@ const empData = [
       "email": "isabella.anderson@example.com",
       "phone": "(311)186-5829x1368",
       "joining_date": "2021-05-23"
-    }
+    } 
   },
   {
     "id": 2,

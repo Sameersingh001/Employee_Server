@@ -24,8 +24,15 @@ function saveUpdateData(id , body){
     };
 }
 
+
+function getDeleteEmp(Id){
+    const index = empData.findIndex((emp) => emp.id == Id)
+    empData.splice(index, 1)
+}
+
 export default {
     GetAllData,
     GetIdData,
-    saveUpdateData
+    saveUpdateData,
+    getDeleteEmp
 }
