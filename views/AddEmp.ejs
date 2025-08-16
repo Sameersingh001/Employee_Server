@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AddEmp.css">
+    <title>Add New Employee</title>
+</head>
+<body>
+
+    <h1>Add New Employee Form</h1>
+
+    <a href="/">
+        <button class="view">View All Employees</button>
+    </a>
+
+    <form action="/add" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Image URL:</label><br>
+        <input type="text" name="img"><br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description"></textarea><br><br>
+
+        <label>Department:</label><br>
+        <input type="text" name="department"><br><br>
+
+        <label>Company:</label><br>
+        <input type="text" name="company"><br><br>
+
+        <h3>Details:</h3>
+        <label>Age:</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Joining Date:</label><br>
+        <input type="date" name="joining_date"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    
+</body>
+</html>

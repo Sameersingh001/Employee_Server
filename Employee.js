@@ -14,7 +14,7 @@ const port = 3000
 app.set('view engine', 'ejs')
 app.set('json spaces', 2)
 
-app.use(express.urlencoded())
+app.use(express.urlencoded({extended:true}))
 app.use(methodOverride("_method"))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')));

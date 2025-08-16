@@ -89,4 +89,19 @@ h1{
 .View:hover{
     background-color: #357abd;
 }
+.addnew{
+    height: 40px;
+    width: 210px;
+    margin-top: 10px;
+    background-color: rgb(7, 181, 7);
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addnew:hover{
+    background-color: #357abd;
+}
 

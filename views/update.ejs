@@ -8,7 +8,7 @@
 </head>
 <body>
   
-
+    
     <% IdData.map((update)=> { %>
     <form method="post" action="/update/<%= update.id %>" >
         <h1>Employee Data</h1>
@@ -17,6 +17,9 @@
         <input type="text" value="<%= update.name %>" name="name">
         <label for="Email">Email : </label>
         <input type="email" value="<%= update.details.email %>" name="email">
+
+        <label for="description">About : </label>
+        <textarea name="description"><%= update.description %> </textarea>
 
         <label for="Age">Age : </label>
         <input type="number" value="<%= update.details.age %>" name="age">

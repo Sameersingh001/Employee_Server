@@ -31,6 +31,17 @@ function deleteData(req, res){
 
 }
 
+function addEmp1(req,res){
+    const data = model.GetAllData()
+    res.render('AddEmp', {data})
+}
+
+
+function addEmp(req, res){
+    model.getaddEmp(req.body)
+    console.log(req.body)
+    res.redirect('/')
+}
 
 
 export default {
@@ -38,6 +49,8 @@ export default {
     IdData,
     UpdateEmpData,
     saveData,
-    deleteData
+    deleteData,
+    addEmp1,
+    addEmp
 
 }

@@ -1,0 +1,137 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+/* ===== Glassmorphism Form Container ===== */
+form {
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 18px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    animation: slideUp 0.8s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Headings ===== */
+h1, h3 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ===== Labels ===== */
+label {
+    font-weight: 600;
+    color: #f1f1f1;
+    margin-top: 14px;
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Inputs & Textarea ===== */
+input, textarea, button {
+    width: 95%;
+    padding: 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    transition: all 0.4s ease;
+}
+
+/* Colorful Input Fields */
+input, textarea {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Input Hover/Focus Effect */
+input:hover, textarea:hover {
+    border-color: #ffb347;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff416c;
+    outline: none;
+    box-shadow: 0 0 12px rgba(255, 65, 108, 0.6);
+}
+
+/* ===== Textarea ===== */
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ===== Gradient Button ===== */
+button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 18px;
+    box-shadow: 0 6px 20px rgba(255,65,108,0.4);
+    transition: transform 0.25s ease, background 0.4s ease;
+}
+a .view {
+    background: linear-gradient(135deg, #e26884, #ff4b2b);
+    width: 90%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 18px;
+    box-shadow: 0 6px 20px rgba(255,65,108,0.4);
+    transition: transform 0.25s ease, background 0.4s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,65,108,0.6);
+}
+
+/* ===== Animation ===== */
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+    h1, h3 {
+        font-size: 20px;
+    }
+    input, textarea, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
